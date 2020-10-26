@@ -8,12 +8,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.*;
 
-@SpringBootApplication
 public class GoldenCrownApplication {
 
 	public static void main(String[] args) throws IOException {
 
-		SpringApplication.run(GoldenCrownApplication.class, args);
+
 		List<String> kingdomMessages = new ArrayList<>();
 		String path ="C:\\Users\\DELL\\Downloads\\";
 		boolean isPathValid = FileInputReader.isPathValid(path) ;
