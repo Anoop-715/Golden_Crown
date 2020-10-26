@@ -9,6 +9,16 @@ import java.util.List;
 
 public class FileInputReader {
 
+public static boolean isPathValid(String path) {
+
+        File file = new File(path);
+        if (file.isDirectory()) {
+           return  true;
+        } else {
+            return  false;
+        }
+    }
+
     public static List<String> fileReader(String path) throws IOException {
         List<String> kingdomMessages = new ArrayList<>();
         try {
