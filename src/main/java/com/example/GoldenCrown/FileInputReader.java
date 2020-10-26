@@ -1,17 +1,19 @@
 package com.example.GoldenCrown;
 
-import java.awt.*;
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileReader {
+public class FileInputReader {
 
     public static List<String> fileReader(String path) throws IOException {
         List<String> kingdomMessages = new ArrayList<>();
         try {
-            BufferedReader bufReader = new BufferedReader(new FileReader(path));
+            FileReader fr=new FileReader(path);
+            BufferedReader bufReader = new BufferedReader(fr);
             String line = bufReader.readLine();
             try {
                 while (line != null) {

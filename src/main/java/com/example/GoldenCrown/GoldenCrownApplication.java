@@ -3,10 +3,7 @@ package com.example.GoldenCrown;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -21,7 +18,8 @@ public class GoldenCrownApplication {
 		//read the message from a file
 		// param to a static method in the file reader file location
 
-		List<String> kingdomMessages =  FileReader.fileReader("C:\\Users\\DELL\\Downloads\\GreekTrust_Input.txt ");
+		String path ="C:\\Users\\DELL\\Downloads\\GreekTrust_Input.txt ";
+		List<String> kingdomMessages =  FileInputReader.fileReader("path");
 
 
 
