@@ -19,7 +19,7 @@ public class GoldenCrownApplication {
 		// param to a static method in the file reader file location
 
 		String path ="C:\\Users\\DELL\\Downloads\\GreekTrust_Input.txt ";
-		List<String> kingdomMessages =  FileInputReader.fileReader("path");
+		List<String> kingdomMessages =  FileInputReader.fileReader(path);
 
 
 
