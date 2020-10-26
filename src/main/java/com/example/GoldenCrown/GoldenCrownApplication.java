@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -21,17 +20,12 @@ public class GoldenCrownApplication {
 
 		//read the message from a file
 		// param to a static method in the file reader file location
-//		BufferedReader bufReader = new BufferedReader(new FileReader(""));
-//		List<String> kingdomMessages = new ArrayList<>();
-//		String line = bufReader.readLine();
-//		while (line != null) {
-//			kingdomMessages.add(line);
-//			line = bufReader.readLine();
-//		}
-//		bufReader.close();
+
+		List<String> kingdomMessages =  FileReader.fileReader("C:\\Users\\DELL\\Downloads\\GreekTrust_Input.txt ");
 
 
-		List<String> kingdomMessages = List.of("AIR ROZO", "LAND FAIJWJSOOFAMAU");
+
+//		List<String> kingdomMessages = List.of("AIR ROZO", "LAND FAIJWJSOOFAMAU");
 		Set<Kingdom> supportedKingdoms = GoldenCrownService.getSupportedKingdoms(kingdomMessages);
 		if(supportedKingdoms.size()>0){
 			System.out.print(Kingdom.SPACE.name()+ " ");
