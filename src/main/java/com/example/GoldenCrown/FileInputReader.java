@@ -19,7 +19,7 @@ public static boolean isPathValid(String path) {
     public static List<String> fileReader(String path) throws IOException {
         List<String> kingdomMessages = new ArrayList<>();
         try {
-            FileReader fr=new FileReader(path+"GreekTrust_Input.txt");
+            FileReader fr=new FileReader(path+"GeekTrust_sampleInput.txt");
             BufferedReader bufReader = new BufferedReader(fr);
             String line = bufReader.readLine();
             try {

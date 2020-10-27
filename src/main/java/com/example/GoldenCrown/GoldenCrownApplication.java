@@ -1,7 +1,6 @@
 package com.example.GoldenCrown;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 
 import java.io.IOException;
 import java.util.List;
@@ -14,7 +13,7 @@ public class GoldenCrownApplication {
 
 
 		List<String> kingdomMessages = new ArrayList<>();
-		String path ="C:\\Users\\DELL\\Downloads\\";
+		String path ="C:\\Users\\DELL\\Desktop\\Golden_Crown\\";
 		boolean isPathValid = FileInputReader.isPathValid(path) ;
 		if(isPathValid) { kingdomMessages = FileInputReader.fileReader(path); }
 		else { System.out.print("Path given is wrong "); }
